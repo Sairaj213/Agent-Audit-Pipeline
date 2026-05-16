@@ -1,13 +1,27 @@
-# 🛡️ **`Project`: _Agentic Code Auditor_**
+
+<div align="center">
+  
+# 🗄️ **Agentic Code Auditor**
+  
+### 🤖 `Autonomous Multi-Agent Pipeline`: **“An interactive, human-in-the-loop system for autonomous code auditing and patching.”** <br>
+
 <div align="center">
 
-### 🤖 `Autonomous Multi-Agent Pipeline`: **“An interactive, human-in-the-loop system for autonomous code auditing and patching.”** <br>
+![Python](https://img.shields.io/badge/Python_3.11+-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![React](https://img.shields.io/badge/React-20232a?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Groq](https://img.shields.io/badge/Groq_LLMs-f55036?style=for-the-badge)
+
+</div>
+
 
 </div>
 
 <br>
 
-<img src="./assets/hero_placeholder.png" width="70%" align="right" style="border-radius: 29px; margin-left: 20px;" alt="Dashboard Preview">
+<img src="./assets/HOME.png" width="70%" align="right" style="border-radius: 29px; margin-left: 20px;" alt="Dashboard Preview">
 <div style="border-left: 4px solid #4CAF50; padding-left: 12px; margin: 12px 0; font-size: 16px;">
 🚀 <b>This project provides a powerful, interactive web UI for monitoring a 4-agent LLM pipeline that autonomously analyzes, plans, audits, and patches codebases.</b>
 </div>
@@ -57,7 +71,6 @@
 ├── 📁 .vscode/                    
 │   └── tasks.json                 # Pre-configured tasks for 1-click execution
 │
-├── api_keys.txt                   # Local storage for LLM API keys
 └── README.md                      
 ```
 
@@ -125,8 +138,8 @@ Before you begin, ensure you have the following installed:
 **1. Clone the Repository**  
 
 ```bash
-git clone https://github.com/YourUsername/Agentic_Code_Auditor.git
-cd Agentic_Code_Auditor
+git clone https://github.com/Sairaj213/Agent-Audit-Pipeline.git
+cd Agent-Audit-Pipeline
 ```
 
 **2. Setup the Backend**  
@@ -178,9 +191,28 @@ If you prefer the terminal, you will need two active terminal windows:
     npm run dev
     ```
 
-Your React dashboard will now be live on `http://localhost:5173` (or the port specified by Vite)!
+
+Your React dashboard will now be live on `http://localhost:3000` (or the port specified by Vite)!
 
 ---
 <div align="center">
 <i>Built for Autonomous Auditing.</i>
 </div>
+
+
+  # 📷 Sample Images
+<div align="center">
+
+<img src="./assets/HOME2.png" width="100%" style="border-radius: 29px; margin-top: 10px;">
+<img src="./assets/Agent1.png" width="100%" style="border-radius: 29px; margin-top: 10px;">
+<img src="./assets/Agent2.png" width="100%" style="border-radius: 29px; margin-top: 10px;">
+<img src="./assets/Agent3.png" width="100%" style="border-radius: 29px; margin-top: 10px;">
+<img src="./assets/Agent3_2.png" width="100%" style="border-radius: 29px; margin-top: 10px;"> 
+<img src="./assets/Agent4.png" width="100%" style="border-radius: 29px; margin-top: 10px;">   
+
+</div>
+
+
+<div style="clear: both;"></div>
+
+<br>
