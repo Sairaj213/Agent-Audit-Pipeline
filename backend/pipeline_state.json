@@ -1,0 +1,149 @@
+{
+  "target_dir": "C:\\Users\\saira\\Downloads\\FFFFFF\\TEMP_TEST_PROJECTS\\Neural-Depth-Engine-main",
+  "blueprint": {
+    "files": [
+      "main.py",
+      "pyproject.toml",
+      "README.md"
+    ],
+    "folders": {
+      ".github": {
+        "files": [],
+        "folders": {
+          "workflows": {
+            "files": [
+              "sync-to-hub.yml"
+            ],
+            "folders": {}
+          }
+        }
+      },
+      "src": {
+        "files": [],
+        "folders": {
+          "api": {
+            "files": [
+              "server.py"
+            ],
+            "folders": {}
+          },
+          "core": {
+            "files": [
+              "depth_model.py",
+              "spatial_engine.py"
+            ],
+            "folders": {}
+          },
+          "data": {
+            "files": [
+              "dataset_manager.py"
+            ],
+            "folders": {}
+          },
+          "frontend": {
+            "files": [
+              "index.html",
+              "script.js",
+              "style.css"
+            ],
+            "folders": {}
+          }
+        }
+      },
+      "tests": {
+        "files": [
+          "test_offline.py",
+          "test_run.py"
+        ],
+        "folders": {}
+      }
+    }
+  },
+  "execution_plan": {
+    "execution_sequence": [
+      {
+        "file_path": "pyproject.toml",
+        "dependencies": []
+      },
+      {
+        "file_path": "README.md",
+        "dependencies": []
+      },
+      {
+        "file_path": ".github/workflows/sync-to-hub.yml",
+        "dependencies": []
+      },
+      {
+        "file_path": "src/core/depth_model.py",
+        "dependencies": []
+      },
+      {
+        "file_path": "src/core/spatial_engine.py",
+        "dependencies": [
+          "src/core/depth_model.py"
+        ]
+      },
+      {
+        "file_path": "src/data/dataset_manager.py",
+        "dependencies": [
+          "src/core/depth_model.py",
+          "src/core/spatial_engine.py"
+        ]
+      },
+      {
+        "file_path": "src/api/server.py",
+        "dependencies": [
+          "src/core/depth_model.py",
+          "src/core/spatial_engine.py",
+          "src/data/dataset_manager.py"
+        ]
+      },
+      {
+        "file_path": "src/frontend/index.html",
+        "dependencies": []
+      },
+      {
+        "file_path": "src/frontend/script.js",
+        "dependencies": [
+          "src/frontend/index.html"
+        ]
+      },
+      {
+        "file_path": "src/frontend/style.css",
+        "dependencies": [
+          "src/frontend/index.html"
+        ]
+      },
+      {
+        "file_path": "tests/test_offline.py",
+        "dependencies": [
+          "src/core/depth_model.py",
+          "src/core/spatial_engine.py",
+          "src/data/dataset_manager.py",
+          "src/api/server.py"
+        ]
+      },
+      {
+        "file_path": "tests/test_run.py",
+        "dependencies": [
+          "src/core/depth_model.py",
+          "src/core/spatial_engine.py",
+          "src/data/dataset_manager.py",
+          "src/api/server.py",
+          "tests/test_offline.py"
+        ]
+      },
+      {
+        "file_path": "main.py",
+        "dependencies": [
+          "src/core/depth_model.py",
+          "src/core/spatial_engine.py",
+          "src/data/dataset_manager.py",
+          "src/api/server.py",
+          "tests/test_offline.py",
+          "tests/test_run.py"
+        ]
+      }
+    ]
+  }
+}
